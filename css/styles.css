@@ -11625,7 +11625,7 @@ body {
 			rgba(217, 193, 167, 0.397) 30%,
 			#d9c1a7 100%
 		),
-		url('../assets/img/bg-logo.jpg');
+		url('../assets/img/brainstorming.jpg');
 
 	background-position: center;
 	background-repeat: no-repeat;
@@ -11918,3 +11918,164 @@ body {
 		opacity: 1;
 	}
 }
+
+
+/* Featured section Iphone
+ */
+
+ .features-device-mockup  {
+	padding: 10rem 0;
+
+}
+.features-device-mockup {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.features-device-mockup .circle {
+	position: absolute;
+	left: 0;
+	fill: url(#circleGradient);
+	width: 70%;
+	display: none;
+}
+.features-device-mockup .circle .gradient-start-color {
+	stop-color: #e6ccb0af ;
+}
+.features-device-mockup .circle .gradient-end-color {
+	stop-color: #c1a37f;
+}
+.features-device-mockup .shape-1 {
+	position: absolute;
+	height: 1rem;
+	width: 1rem;
+	transform: rotate(10deg);
+	fill: #c1a37f;
+	top: 15%;
+	right: 10%;
+}
+.features-device-mockup .shape-2 {
+	position: absolute;
+	height: 0.75rem;
+	width: 0.75rem;
+	fill: #e6ccb0;
+	bottom: 15%;
+	left: 10%;
+}
+.features-device-mockup .device-wrapper {
+	max-width: 10rem;
+}
+
+@media (min-width: 576px) {
+	.features-device-mockup .circle {
+		width: 70%;
+		display: block;
+		left: auto;
+	}
+	.features-device-mockup .device-wrapper {
+		max-width: 12.5rem;
+	}
+}
+@media (min-width: 768px) {
+	.features-device-mockup .circle {
+		width: 60%;
+		left: auto;
+	}
+	.features-device-mockup .device-wrapper {
+		max-width: 15rem;
+	}
+}
+@media (min-width: 992px) {
+	.features-device-mockup .circle {
+		width: 90%;
+		left: -25%;
+	}
+	.features-device-mockup .shape-1 {
+		top: 15%;
+		right: -15%;
+	}
+	.features-device-mockup .shape-2 {
+		bottom: 10%;
+		left: -10%;
+	}
+	.features-device-mockup .device-wrapper {
+		max-width: 15rem;
+		margin-left: auto;
+	}
+}
+@media (min-width: 1200px) {
+	.features-device-mockup .circle {
+		width: 75%;
+		left: 0;
+	}
+	.features-device-mockup .shape-2 {
+		bottom: 15%;
+		left: 10%;
+	}
+	.features-device-mockup .device-wrapper {
+		max-width: 15rem;
+	}
+}
+@media (min-width: 1400px) {
+	.features-device-mockup .circle {
+		width: 80%;
+		left: 0;
+	}
+	.features-device-mockup .device-wrapper {
+		max-width: 17rem;
+	}
+}
+
+.device-wrapper {
+	max-width: 300px;
+	width: 100%;
+  }
+  
+  .device {
+	position: relative;
+	background-size: cover;
+  }
+  
+  .device::after {
+	position: absolute;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+  }
+  
+  .device .screen {
+	position: absolute;
+	background-size: cover;
+	pointer-events: auto;
+  }
+  
+  .device .button {
+	position: absolute;
+	cursor: pointer;
+  }
+  
+  .device[data-device=iPhoneX][data-orientation=portrait][data-color=black] {
+	padding-bottom: 198.898071625%;
+  }
+  
+  .device[data-device=iPhoneX][data-orientation=portrait][data-color=black] .screen {
+	top: 3.1855955679%;
+	left: 6.8870523416%;
+	width: 86.2258953168%;
+	height: 93.6288088643%;
+  }
+  
+  .device[data-device=iPhoneX][data-orientation=portrait][data-color=black]::after {
+	content: "";
+	background-image: url("../assets/img/portrait_black.png");
+  }
+  
+  .device[data-device=iPhoneX][data-orientation=portrait][data-color=black] .button {
+	display: none;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+  }
