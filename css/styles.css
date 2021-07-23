@@ -11528,7 +11528,7 @@ body {
 			rgba(217, 193, 167, 0.397) 30%,
 			#d9c1a7 100%
 		),
-		url('./assets/img/bg-logo.jpg');
+		url('../assets/img/bg-logo.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: scroll;
@@ -11625,7 +11625,7 @@ body {
 			rgba(217, 193, 167, 0.397) 30%,
 			#d9c1a7 100%
 		),
-		url('./assets/img/bg-logo.jpg');
+		url('../assets/img/bg-logo.jpg');
 
 	background-position: center;
 	background-repeat: no-repeat;
