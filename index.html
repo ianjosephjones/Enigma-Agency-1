@@ -74,7 +74,13 @@
 			>
 				<div class="d-flex justify-content-center">
 					<div class="text-center">
-						<h1 class="mx-auto my-0 text-uppercase">ENIGMA Agency</h1>
+						<img
+							class="img-fluid"
+							src="./assets/img/enigmaagency_clearback.png"
+							alt="..."
+						/>
+
+						<!-- <h1 class="mx-auto my-0 text-uppercase">ENIGMA Agency</h1> -->
 						<!-- <h2 class="text-white-50 mx-auto mt-2 mb-5">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 							eiusmod tempor incididunt ut labore et dolore
@@ -83,8 +89,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="chevron_container_container">
-				<div class="chevron_container">
+			<div class="chevron_container_container justify-content-center">
+				<div class="chevron_container justify-content-center">
 					<div class="chevron"></div>
 					<div class="chevron"></div>
 					<div class="chevron"></div>
@@ -405,7 +411,8 @@
 										></i>
 										<h3 class="font-alt">Social Media Makeover</h3>
 										<p class="text-muted mb-0">
-                                 accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque 
+											accusamus et iusto odio dignissimos ducimus qui blanditiis
+											praesentium voluptatum deleniti atque
 										</p>
 									</div>
 								</div>
@@ -417,7 +424,8 @@
 										></i>
 										<h3 class="font-alt">Flexible Use</h3>
 										<p class="text-muted mb-0">
-                                 dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
+											dignissimos ducimus qui blanditiis praesentium voluptatum
+											deleniti atque corrupti
 										</p>
 									</div>
 								</div>
@@ -431,7 +439,9 @@
 										></i>
 										<h3 class="font-alt">Free Content</h3>
 										<p class="text-muted mb-0">
-											At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas.
+											At vero eos et accusamus et iusto odio dignissimos ducimus
+											qui blanditiis praesentium voluptatum deleniti atque
+											corrupti quos dolores et quas.
 										</p>
 									</div>
 								</div>
@@ -449,7 +459,8 @@
 										></i>
 										<h3 class="font-alt">Open Access</h3>
 										<p class="text-muted mb-0">
-                                 accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque 
+											accusamus et iusto odio dignissimos ducimus qui blanditiis
+											praesentium voluptatum deleniti atque
 										</p>
 									</div>
 								</div>
@@ -612,6 +623,16 @@
 								<div class="col">
 									<input
 										class="form-control"
+										id="Name"
+										type="name"
+										placeholder="Enter name..."
+										aria-label="Enter name..."
+										data-sb-validations="required,name"
+									/>
+								</div>
+								<div class="col">
+									<input
+										class="form-control"
 										id="emailAddress"
 										type="email"
 										placeholder="Enter email address..."
@@ -619,13 +640,23 @@
 										data-sb-validations="required,email"
 									/>
 								</div>
+								<div class="form-group mt-3 mb-3">
+									<textarea
+										class="form-control"
+										name="message"
+										rows="5"
+										placeholder="Message..."
+										required
+									></textarea>
+								</div>
+
 								<div class="col-auto">
 									<button
 										class="btn btn-primary disabled"
 										id="submitButton"
 										type="submit"
 									>
-										Notify Me!
+										Submit!
 									</button>
 								</div>
 							</div>
