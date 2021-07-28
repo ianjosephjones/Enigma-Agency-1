@@ -57,7 +57,7 @@ color 5: #9c694a
 
 body {
 	margin: 0;
-	font-family: Ochre-Regular, 'Nunito', -apple-system, BlinkMacSystemFont,
+	font-family: Arial, Helvetica, sans-serif Ochre-Regular, 'Nunito', -apple-system, BlinkMacSystemFont,
 		'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
 		'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 	font-size: 1rem;
@@ -1098,12 +1098,12 @@ progress {
 
 .g-5,
 .gx-5 {
-	--bs-gutter-x: 3rem;
+	--bs-gutter-x: 7rem;
 }
 
 .g-5,
 .gy-5 {
-	--bs-gutter-y: 3rem;
+	--bs-gutter-y: 7rem;
 }
 
 @media (min-width: 576px) {
@@ -11611,6 +11611,9 @@ body {
 	padding: 3rem;
 	font-size: 90%;
 }
+.projects-section .project-text ul {
+	list-style-type: none;
+}
 @media (min-width: 992px) {
 	.projects-section .project-text {
 		padding: 5rem;
@@ -11623,7 +11626,7 @@ body {
 }
 
 .signup-section {
-	padding: 10rem 0;
+	padding: 4rem 0;
 	background: linear-gradient(
 			to bottom,
 			rgba(217, 193, 167, 0) 0%,
@@ -11745,7 +11748,7 @@ body {
 	padding: 30px;
 	position: relative;
 	overflow: hidden;
-	border-radius: 10px;
+	border-radius: 4px;
 	margin: 0 10px 40px 10px;
 	background: #d9c1a5;
 	box-shadow: 0 10px 29px 0 rgba(0, 0, 0, 0.1);
@@ -11789,7 +11792,6 @@ body {
 	line-height: 24px;
 	margin-bottom: 0;
 }
-
 
 .footer {
 	padding: 5rem 0;
@@ -11933,7 +11935,7 @@ body {
  */
 
 .features-device-mockup {
-	padding: 10rem 0;
+	padding: 5rem 0;
 }
 .features-device-mockup {
 	display: flex;
@@ -12301,4 +12303,7 @@ body {
 	color: #fff;
 }
 
-
+.project-featured {
+	background-color: #d9c1a5;
+	border-radius: 4px;
+}
