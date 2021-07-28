@@ -57,9 +57,9 @@ color 5: #9c694a
 
 body {
 	margin: 0;
-	font-family: Ochre-Regular, 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-		'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-		'Segoe UI Symbol', 'Noto Color Emoji';
+	font-family: Ochre-Regular, 'Nunito', -apple-system, BlinkMacSystemFont,
+		'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
+		'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.5;
@@ -11704,7 +11704,7 @@ body {
 }
 
 .clients .client-logo {
-	padding: 30px;
+	/* padding: 30px; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -11712,11 +11712,11 @@ body {
 	border-bottom: 1px solid #eee;
 	overflow: hidden;
 	background: #fff;
-	height: 120px;
+	height: 146px;
 }
 
 .clients .client-logo img {
-	height: 50%;
+	height: 82%;
 	filter: grayscale(100%);
 	transition: 0.3s;
 }
@@ -11789,6 +11789,7 @@ body {
 	line-height: 24px;
 	margin-bottom: 0;
 }
+
 
 .footer {
 	padding: 5rem 0;
@@ -12186,3 +12187,118 @@ body {
 .pixlee_container h2 {
 	text-align: center;
 }
+
+/*--------------------------------------------------------------
+# Pricing
+--------------------------------------------------------------*/
+
+.pricing {
+	padding: 10rem 0;
+}
+
+.pricing .box {
+	padding: 20px;
+	background: #fff;
+	text-align: center;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.pricing .box h3 {
+	font-weight: 400;
+	margin: -20px -20px 20px -20px;
+	padding: 20px 15px;
+	font-size: 16px;
+	font-weight: 600;
+	color: #777777;
+	background: #f8f8f8;
+}
+
+.pricing .box h4 {
+	font-size: 36px;
+	color: #c1a37f;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.pricing .box h4 sup {
+	font-size: 20px;
+	top: -15px;
+	left: -3px;
+}
+
+.pricing .box h4 span {
+	color: #bababa;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.pricing .box ul {
+	padding: 0;
+	list-style: none;
+	color: #444444;
+	text-align: center;
+	line-height: 20px;
+	font-size: 14px;
+}
+
+.pricing .box ul li {
+	padding-bottom: 16px;
+}
+
+.pricing .box ul i {
+	color: #c1a37f;
+	font-size: 18px;
+	padding-right: 4px;
+}
+
+.pricing .box ul .na {
+	color: #ccc;
+	text-decoration: line-through;
+}
+
+.pricing .btn-wrap {
+	margin: 20px -20px -20px -20px;
+	padding: 20px 15px;
+	background: #f8f8f8;
+	text-align: center;
+}
+
+.pricing .btn-buy {
+	background: #c1a37f;
+	display: inline-block;
+	padding: 8px 35px 10px 35px;
+	border-radius: 4px;
+	color: #fff;
+	transition: none;
+	font-size: 14px;
+	font-weight: 400;
+	font-weight: 600;
+	transition: 0.3s;
+}
+
+.pricing .btn-buy:hover {
+	background: #3b8af2;
+}
+
+.pricing .featured h3 {
+	color: #fff;
+	background: #c1a37f;
+}
+
+.pricing .advanced {
+	width: 200px;
+	position: absolute;
+	top: 18px;
+	right: -68px;
+	transform: rotate(45deg);
+	z-index: 1;
+	font-size: 14px;
+	padding: 1px 0 3px 0;
+	background: #c1a37f;
+	color: #fff;
+}
+
+
