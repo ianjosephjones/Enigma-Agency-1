@@ -57,7 +57,7 @@ color 5: #9c694a
 
 body {
 	margin: 0;
-	font-family: Arial, Helvetica, sans-serif Ochre-Regular, 'Nunito', -apple-system, BlinkMacSystemFont,
+	font-family: Ochre-Regular, sans-serif, 'Nunito', -apple-system, BlinkMacSystemFont,
 		'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
 		'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 	font-size: 1rem;
@@ -3068,8 +3068,8 @@ fieldset:disabled .btn {
 }
 .btn-primary:hover {
 	color: #fff;
-	background-color: #9c694a;
-	border-color: #9c694a;
+	background-color: #9f785a;
+	border-color: #9f785a;
 }
 .btn-check:focus + .btn-primary,
 .btn-primary:focus {
@@ -11538,7 +11538,7 @@ body {
 
 @font-face {
 	font-family: Ochre-Regular;
-	src: url(Ochre-Regular.woff);
+	src: url('../assets/Ochre-Regular.woff');
 }
 
 .masthead h1,
@@ -11556,6 +11556,7 @@ body {
 .masthead .h2 {
 	max-width: 20rem;
 	font-size: 1rem;
+	font-style: italic;
 }
 @media (min-width: 768px) {
 	.masthead h1,
@@ -11616,12 +11617,12 @@ body {
 }
 @media (min-width: 992px) {
 	.projects-section .project-text {
-		padding: 5rem;
+		/* padding: 5rem; */
 	}
 	.projects-section .project-text hr {
 		border-color: #64a19d;
 		border-width: 0.25rem;
-		width: 30%;
+		width: 100%;
 	}
 }
 
@@ -12306,4 +12307,13 @@ body {
 .project-featured {
 	background-color: #d9c1a5;
 	border-radius: 4px;
+}
+
+#newpost{
+	display: none;
+
+}
+
+#newpost .project-featured ul{
+	list-style-type: none;
 }
