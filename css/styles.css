@@ -11805,6 +11805,10 @@ body {
 	margin-bottom: 0;
 }
 
+.services .description li {
+	text-transform: lowercase;
+}
+
 .footer {
 	padding: 5rem 0;
 }
@@ -12302,8 +12306,6 @@ body {
 	background: #c1a37f;
 }
 
-
-
 .pricing .advanced {
 	width: 200px;
 	position: absolute;
@@ -12361,4 +12363,3 @@ body {
 }
 
 /*  */
-
