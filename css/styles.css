@@ -57,9 +57,9 @@ color 5: #9c694a
 
 body {
 	margin: 0;
-	font-family: Ochre-Regular, sans-serif, 'Nunito', -apple-system, BlinkMacSystemFont,
-		'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
-		'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+	font-family: Ochre-Regular, sans-serif, 'Nunito', -apple-system,
+		BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif,
+		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.5;
@@ -11556,7 +11556,6 @@ body {
 .masthead .h2 {
 	max-width: 20rem;
 	font-size: 1rem;
-
 }
 @media (min-width: 768px) {
 	.masthead h1,
@@ -11634,7 +11633,7 @@ body {
 			rgba(217, 193, 167, 0.397) 30%,
 			#d9c1a7 100%
 		),
-		url('../assets/img/brainstorming.jpg');
+		url('../assets/img/Custom-Campaign.jpg');
 
 	background-position: center;
 	background-repeat: no-repeat;
@@ -12321,11 +12320,10 @@ body {
 	border-radius: 4px;
 }
 
-#newpost{
+#newpost {
 	display: none;
-
 }
 
-#newpost .project-featured ul{
+#newpost .project-featured ul {
 	list-style-type: none;
 }
