@@ -12294,13 +12294,15 @@ body {
 }
 
 .pricing .btn-buy:hover {
-	background: #3b8af2;
+	background: #c1a37f;
 }
 
 .pricing .featured h3 {
 	color: #fff;
 	background: #c1a37f;
 }
+
+
 
 .pricing .advanced {
 	width: 200px;
@@ -12315,6 +12317,11 @@ body {
 	color: #fff;
 }
 
+.pricing .box:hover h3 {
+	color: #ffffff;
+	background: #c1a37f;
+}
+
 .project-featured {
 	background-color: #d9c1a5;
 	border-radius: 4px;
@@ -12327,3 +12334,31 @@ body {
 #newpost .project-featured ul {
 	list-style-type: none;
 }
+
+.pricing .box {
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.pricing .featured:hover h3 {
+	color: #fff;
+	background: radial-gradient(
+			ellipse farthest-corner at right bottom,
+			#fedb37 0%,
+			#fdb931 8%,
+			#9f7928 30%,
+			#8a6e2f 40%,
+			transparent 80%
+		),
+		radial-gradient(
+			ellipse farthest-corner at left top,
+			#ffffff 0%,
+			#ffffac 8%,
+			#d1b464 25%,
+			#5d4a1f 62.5%,
+			#5d4a1f 100%
+		);
+}
+
+/*  */
+
