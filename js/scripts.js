@@ -62,6 +62,7 @@ window.addEventListener('load', () => {
 // 	}
 // };
 
-$('#button').click(function () {
+$('#learnMorebutton').click(function () {
 	$('#newpost').slideToggle();
+	$('#learnMoreVideo')[0].play();
 });
