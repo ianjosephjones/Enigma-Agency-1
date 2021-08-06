@@ -66,3 +66,23 @@ $('#learnMorebutton').click(function () {
 	$('#newpost').slideToggle();
 	$('#learnMoreVideo')[0].play();
 });
+
+// Get form by Id
+const form = document.getElementById('contactForm');
+// When triggered create FormData object called mail
+const formEvent = form.addEventListener('submit', (event) => {
+	event.preventDefault();
+
+	let mail = new FormData(form);
+	// Call a func sendMail()
+	sendMail(mail);
+});
+
+const sendMail = (mail) => {
+	fetch('', {
+		method: 'post',
+		body: mail,
+	}).then((response) => {
+		return response.json();
+	});
+};

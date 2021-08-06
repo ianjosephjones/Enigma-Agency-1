@@ -804,54 +804,66 @@
 							class="form-signup"
 							id="contactForm"
 							data-sb-form-api-token="API_TOKEN"
+							method="POST"
+							action="send"
+							enctype = "multipart/form-data"
 						>
 							<!-- Email address input-->
 							<div class="row input-group-newsletter">
 								<div class="col-lg-6 mb-3">
 									<input
+										name="first_name"
 										class="form-control"
 										id="First-Name"
 										type="First-Name"
 										placeholder="Enter First Name"
 										aria-label="Enter First Name"
 										data-sb-validations="required,First Name"
+										required
 									/>
 								</div>
 								<div class="col-lg-6 mb-3">
 									<input
+										name="last_name"
 										class="form-control"
 										id="last-name"
 										type="last-name"
 										placeholder="Enter Last Name"
 										aria-label="Enter Last Name"
 										data-sb-validations="required,Last Name"
+										required
 									/>
 								</div>
 
 								<div class="col-lg-12 mb-3">
 									<input
+										name="email"
 										class="form-control"
 										id="emailAddress"
 										type="emailAddress"
 										placeholder="Enter Email Address"
 										aria-label="Enter Email Address"
 										data-sb-validations="required,email"
+										required
 									/>
 								</div>
 
 								<div class="col-lg-12 mb-3">
 									<input
+										name="howSoon"
 										class="form-control"
 										id="howSoon"
 										type="howSoon"
 										placeholder="How soon do you want to start?"
 										aria-label="How soon do you want to start?"
 										data-sb-validations="required,email"
+										required
 									/>
 								</div>
 
 								<div class="form-group mt-3 mb-3">
 									<textarea
+										name="message"
 										class="form-control"
 										id="emailAddress"
 										name="Reason For Contact..."
@@ -866,6 +878,7 @@
 										class="btn btn-primary disabled"
 										id="submitButton"
 										type="submit"
+										value="submit"
 									>
 									Let's do this!
 									</button>
