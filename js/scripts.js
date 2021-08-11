@@ -62,6 +62,8 @@ window.addEventListener('load', () => {
 // 	}
 // };
 
+var isDevelopment = window.location.href.includes('localhost');
+
 $('#learnMorebutton').click(function () {
 	$('#newpost').slideToggle();
 	$('#learnMoreVideo')[0].play();
@@ -79,10 +81,34 @@ const formEvent = form.addEventListener('submit', (event) => {
 });
 
 const sendMail = (mail) => {
-	fetch('', {
-		method: 'post',
-		body: mail,
-	}).then((response) => {
-		return response.json();
-	});
+	debugger;
+	// show the user the app is doing work
+	$('#signup').hide();
+	$('#spinner').show();
+
+	// TODO: set production url
+	var contactUsUrl = isDevelopment
+		? 'https://localhost:44346/api/contactus'
+		: '';
+
+	var requestOptions = { method: 'POST', body: mail };
+	fetch(contactUsUrl, requestOptions)
+		.then((response) => response.text())
+		.then((result) => {
+			// on succes
+		})
+		.catch((error) => {
+			console.log('error', error);
+		})
+		.finally((done) => {
+			// show the user the app is done working
+			$('#spinner').hide();
+			$('#thankYou').show();
+		});
 };
+
+// validate model
+// setup request
+// send request
+// handle resposne
+// success or failure

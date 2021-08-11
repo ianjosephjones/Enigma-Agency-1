@@ -112,6 +112,7 @@
 			</div>
 		</header>
 
+
 		<!-- About-->
 		<section class="about-section text-center" id="about">
 			<div class="container px-4 px-lg-5">
@@ -812,25 +813,23 @@
 							<div class="row input-group-newsletter">
 								<div class="col-lg-6 mb-3">
 									<input
-										name="first_name"
+										name="firstName"
 										class="form-control"
-										id="First-Name"
-										type="First-Name"
+										id="firstName"
 										placeholder="Enter First Name"
 										aria-label="Enter First Name"
-										data-sb-validations="required,First Name"
+										maxlength="100"
 										required
 									/>
 								</div>
 								<div class="col-lg-6 mb-3">
 									<input
-										name="last_name"
+										name="lastName"
 										class="form-control"
-										id="last-name"
-										type="last-name"
+										id="lastName"
 										placeholder="Enter Last Name"
 										aria-label="Enter Last Name"
-										data-sb-validations="required,Last Name"
+										maxlength="100"
 										required
 									/>
 								</div>
@@ -839,11 +838,10 @@
 									<input
 										name="email"
 										class="form-control"
-										id="emailAddress"
-										type="emailAddress"
+										id="email"
+										type="email"
 										placeholder="Enter Email Address"
 										aria-label="Enter Email Address"
-										data-sb-validations="required,email"
 										required
 									/>
 								</div>
@@ -853,10 +851,8 @@
 										name="howSoon"
 										class="form-control"
 										id="howSoon"
-										type="howSoon"
 										placeholder="How soon do you want to start?"
 										aria-label="How soon do you want to start?"
-										data-sb-validations="required,email"
 										required
 									/>
 								</div>
@@ -865,8 +861,7 @@
 									<textarea
 										name="message"
 										class="form-control"
-										id="emailAddress"
-										name="Reason For Contact..."
+										id="message"
 										rows="5"
 										placeholder="Reason For Contact..."
 										required
@@ -875,7 +870,7 @@
 
 								<div class="col-auto">
 									<button
-										class="btn btn-primary disabled"
+										class="btn btn-primary"
 										id="submitButton"
 										type="submit"
 										value="submit"
@@ -923,6 +918,47 @@
 			</div>
 		</section>
 		<!-- End Signup Section -->
+
+		<section id="thankYou" style="display: none;">
+			<div
+				class="
+					mt-5
+					container
+					px-4 px-lg-5
+					d-flex
+					h-100
+					align-items-center
+					justify-content-center
+				"
+			>
+		
+
+				<div class="d-flex justify-content-center">
+					<div class="text-center">
+						<h1 class="mx-auto my-0 text-uppercase">Thank you!</h1>
+						<h2 class="text-dark-50 mx-auto mt-2 mb-5 ">
+							We will be in touch soon
+						</h2>
+					</div>
+			</div>
+		</div>
+
+
+
+		</section>
+		<section id="spinner" style="display: none;">
+			
+
+	
+
+			<div class="d-flex my-5 justify-content-center">
+				<div class="text-center">
+					<div class="loader" ></div>
+				</div>
+			</div>	
+
+
+		</section>
 
 		<!-- Contact-->
 		<section class="contact-section bg-black">
@@ -974,6 +1010,7 @@
 		</section>
 		
 		<!-- End Contact Section -->
+		</div>
 
 		<!-- Footer-->
 		<footer class="footer bg-black small text-center text-white-50">
