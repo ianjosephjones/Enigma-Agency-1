@@ -62,7 +62,18 @@ window.addEventListener('load', () => {
 // 	}
 // };
 
-var isDevelopment = window.location.href.includes('localhost');
+var isLocalhost = window.location.href.includes('localhost');
+var isDevelopment = window.location.href.includes('ianjosephjones');
+var isProduction = window.location.href.includes('engimaagenceync.com');
+
+var contactUsUrl = '';
+if (isLocalhost) {
+	contactUsUrl = 'https://localhost:44346/api/contactus';
+} else if (isDevelopment) {
+	contactUsUrl = 'https://emailer20210811113143.azurewebsites.net/api/contactus';
+} else if (isProduction) {
+	// TODO: set production url
+}
 
 $('#learnMorebutton').click(function () {
 	$('#newpost').slideToggle();
@@ -81,15 +92,9 @@ const formEvent = form.addEventListener('submit', (event) => {
 });
 
 const sendMail = (mail) => {
-	debugger;
 	// show the user the app is doing work
 	$('#signup').hide();
 	$('#spinner').show();
-
-	// TODO: set production url
-	var contactUsUrl = isDevelopment
-		? 'https://localhost:44346/api/contactus'
-		: '';
 
 	var requestOptions = { method: 'POST', body: mail };
 	fetch(contactUsUrl, requestOptions)
@@ -106,9 +111,3 @@ const sendMail = (mail) => {
 			$('#thankYou').show();
 		});
 };
-
-// validate model
-// setup request
-// send request
-// handle resposne
-// success or failure
