@@ -64,7 +64,7 @@ window.addEventListener('load', () => {
 
 var isLocalhost = window.location.href.includes('localhost');
 var isDevelopment = window.location.href.includes('ianjosephjones');
-var isProduction = window.location.href.includes('engimaagenceync.com');
+var isProduction = window.location.href.includes('engimaagenceync.co');
 
 var contactUsUrl = '';
 if (isLocalhost) {
@@ -72,7 +72,7 @@ if (isLocalhost) {
 } else if (isDevelopment) {
 	contactUsUrl = 'https://emailer20210811113143.azurewebsites.net/api/contactus';
 } else if (isProduction) {
-	// TODO: set production url
+	contactUsUrl = 'https://enimgaagencyapi.azurewebsites.net/api/contactus';
 }
 
 $('#learnMorebutton').click(function () {
