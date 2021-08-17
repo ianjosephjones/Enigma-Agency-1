@@ -64,13 +64,14 @@ window.addEventListener('load', () => {
 
 var isLocalhost = window.location.href.includes('localhost');
 var isDevelopment = window.location.href.includes('ianjosephjones');
-var isProduction = window.location.href.includes('engimaagencey.co');
+var isProduction = window.location.href.includes('www.enigmaagency.co');
 
 var contactUsUrl = '';
 if (isLocalhost) {
 	contactUsUrl = 'https://localhost:44346/api/contactus';
 } else if (isDevelopment) {
-	contactUsUrl = 'https://emailer20210811113143.azurewebsites.net/api/contactus';
+	contactUsUrl =
+		'https://emailer20210811113143.azurewebsites.net/api/contactus';
 } else if (isProduction) {
 	contactUsUrl = 'https://enimgaagencyapi.azurewebsites.net/api/contactus';
 }
