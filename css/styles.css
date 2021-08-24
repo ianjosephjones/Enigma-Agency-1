@@ -7950,10 +7950,7 @@ fieldset:disabled .btn {
 
 .text-white {
 	color: #fff !important;
-	background-color: #c1a37f;
-	padding: 15px 50px;
-	box-shadow: 0 0.1875rem 0.1875rem 0 rgb(0 0 0 / 10%) !important;
-	border-radius: 4px;
+
 }
 
 .text-body {
@@ -12438,4 +12435,11 @@ body {
 
 .ssm-feature {
 	padding: 10rem 0;
+}
+
+.contact-us-h2 {
+	background-color: #c1a37f;
+	padding: 15px 50px;
+	box-shadow: 0 0.1875rem 0.1875rem 0 rgb(0 0 0 / 10%) !important;
+	border-radius: 4px;
 }
