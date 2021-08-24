@@ -57,7 +57,7 @@ color 5: #9c694a
 
 body {
 	margin: 0;
-	font-family: Ochre-Regular, sans-serif, 'Nunito', -apple-system,
+	font-family:'Playfair Display', serif, sans-serif, 'Nunito', -apple-system,
 		BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif,
 		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 	font-size: 1rem;
@@ -2201,6 +2201,7 @@ progress {
 	font-size: 0.875em;
 	color: #6c757d;
 }
+
 
 .form-control {
 	display: block;
@@ -7950,6 +7951,11 @@ fieldset:disabled .btn {
 
 .text-white {
 	color: #fff !important;
+	background-color: #c1a37f;
+	padding: 15px 50px;
+	box-shadow: 0 0.1875rem 0.1875rem 0 rgb(0 0 0 / 10%) !important;
+    border-radius: 4px;
+
 }
 
 .text-body {
@@ -11593,6 +11599,7 @@ body {
 }
 .about-section p {
 	margin-bottom: 5rem;
+	font-size: 19px;
 }
 
 .projects-section {
@@ -11644,6 +11651,20 @@ body {
 	box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
 	padding: 1.25rem 2rem;
 	height: auto;
+	font-family: 'Varela Round', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
+		'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+	font-size: 80%;
+	text-transform: uppercase;
+	letter-spacing: 0.15rem;
+	border: 0;
+}
+
+.signup-section .form-signup select {
+	box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+	padding: 1.25rem 2rem;
+	height: auto;
+	color: #6C757D;
 	font-family: 'Varela Round', -apple-system, BlinkMacSystemFont, 'Segoe UI',
 		Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
 		'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -11787,7 +11808,13 @@ body {
 	margin-left: 40px;
 	font-weight: 700;
 	margin-bottom: 15px;
-	font-size: 18px;
+	font-size: 19px;
+	background-color: #f1e9dc85;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+	border-radius: 4px;
+	box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
 }
 
 .services .title a {

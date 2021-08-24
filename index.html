@@ -10,9 +10,11 @@
 			<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 			<!-- Google fonts-->
 			<link
-				href="https://fonts.googleapis.com/css?family=Varela+Round"
+				href="https://fonts.google.com/share?selection.family=Playfair%20Display"
 				rel="stylesheet"
 			/>
+
+			
 			<link
 				href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
 				rel="stylesheet"
@@ -716,6 +718,7 @@
 					</div>
 
 					<div class="row">
+						
 						<div
 							class="col-lg-3 col-md-6"
 							data-aos="fade-up"
@@ -726,7 +729,7 @@
 								<h4><sup>$</sup>1,999<span> / month</span></h4>
 								<ul>
 									<li>3 posts per week</li>
-									<li>7 story post per week</li>
+									<li>7 story posts per week</li>
 									<li>3 hours engagement per month</li>
 									<li>1 hour meeting per month</li>
 									<li>&nbsp</li>
@@ -750,7 +753,7 @@
 								<h4><sup>$</sup>2,999<span> / month</span></h4>
 								<ul>
 									<li>5 posts per week</li>
-									<li>10 story post per week</li>
+									<li>10 story posts per week</li>
 									<li>1 tiktok per month</li>
 									<li>10 hours engagement per month</li>
 									<li>1 hour meeting per month</li>
@@ -771,7 +774,7 @@
 								<h4><sup>$</sup>4,999<span> / month</span></h4>
 								<ul>
 									<li>7 posts per week</li>
-									<li>14 story post per week</li>
+									<li>14 story posts per week</li>
 									<li>2 tiktok per month</li>
 									<li>15 hours engagement per month</li>
 									<li>1 hour meeting per month</li>
@@ -792,7 +795,7 @@
 								<h4><sup>$</sup>6,999<span> / month</span></h4>
 								<ul>
 									<li>14 posts per week</li>
-									<li>21 story post per week</li>
+									<li>21 story posts per week</li>
 									<li>3 tiktok per month</li>
 									<li>20 hours engagement per month</li>
 									<li>2 hour meeting per month</li>
@@ -811,8 +814,8 @@
 				<div class="container px-4 px-lg-5">
 					<div class="row gx-4 gx-lg-5">
 						<div class="col-md-10 col-lg-8 mx-auto text-center">
-							<i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-							<h2 class="text-white mb-5">Contact us!</h2>
+							<i class="arrow far fa-paper-plane fa-2x mb-2 " style="color:white"></i>
+							<h2 class="text-white mb-5"  >Contact us!</h2>
 
 							<form
 								class="form-signup"
@@ -869,16 +872,49 @@
 											required
 										/>
 									</div>
+									
+									<div class="col-lg-12 mb-3">
+										<select
+											name="package"
+											class="form-select"
+											id="package"
+											placeholder="Package of interest?"
+											aria-label="Package of interest?"
+											required>
+										
+											<option selected>Package of interest?</option>
+											<option value="Standard">Standard ($1,999)</option>
+											<option value="Basic">Basic ($2,999)</option>
+											<option value="Preferred">Preferred ($4,999)</option>
+											<option value="Elite">Elite ($6,999)</option>
+											<option value="SMM">SMM Subscription ($1,000)</option>
+										</select>
+									</div>
 
 									<div class="col-lg-12 mb-3">
-										<input
+										<!-- <input
 											name="howSoon"
 											class="form-control"
 											id="howSoon"
 											placeholder="How soon do you want to start?"
 											aria-label="How soon do you want to start?"
 											required
-										/>
+										/> -->
+
+										<select
+											name="howSoon"
+											class="form-select"
+											id="howSoon"
+											placeholder="How soon do you want to start?"
+											aria-label="How soon do you want to start?"
+											required>
+										
+											<option selected>How soon do you want to start?</option>
+											<option value="1-2 weeks">1-2 weeks</option>
+											<option value="3-4 weeks">3-4 weeks</option>
+											<option value="1-2 months">1-2 months</option>
+											<option value="6+ months">6+ months</option>
+										</select>
 									</div>
 
 									<div class="form-group mt-3 mb-3">
