@@ -11800,7 +11800,6 @@ body {
 }
 
 .services .title {
-	margin-left: 40px;
 	font-weight: 700;
 	margin-bottom: 15px;
 	font-size: 19px;
@@ -12418,7 +12417,6 @@ body {
 
 @media (max-width: 768px) {
 	.ssm-feature .ssm-testimonial {
-		text-align: center;
 	}
 }
 
